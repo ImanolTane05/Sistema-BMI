@@ -7,7 +7,8 @@ import Login from './components/index';
 import reportWebVitals from './reportWebVitals';
 import IndexAdmin from './components/indexAdmin';
 import ViewUsuarios from './components/viewUsuarios';
-import AddUser from './components/addUser'; // Asegúrate de que el nombre del componente comience con mayúscula
+import AddUser from './components/addUser'; 
+import EditUsuario from './components/EditUsuario';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,6 +20,7 @@ root.render(
         <Route path="/admin" element={<IndexAdmin />} />
         <Route path="/usuarios" element={<ViewUsuarios />} />
         <Route path="/addusuarios" element={<AddUser />} />
+        <Route path="/editusuarios" element={<EditUsuario />} /> 
       </Routes>
     </Router>
   </React.StrictMode>

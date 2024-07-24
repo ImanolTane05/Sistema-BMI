@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../styles/index.css'; // Asegúrate de que los estilos se ajusten a esta nueva interfaz
+//import '../styles/index.css'; // Asegúrate de que los estilos se ajusten a esta nueva interfaz
 import logo from '../img/logo.png';
 import Pie from '../img/Pie.png';
 import { FaUsers, FaShoppingCart, FaBook, FaCalendarAlt, FaSignOutAlt } from 'react-icons/fa';

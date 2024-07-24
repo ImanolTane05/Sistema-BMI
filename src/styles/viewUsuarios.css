@@ -1,122 +1,144 @@
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .UsuariosApp {
-    font-family: Arial, sans-serif;
-  }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  .logo {
-    width: 350px; /* Ajustar el tamaño del logo */
-    height: auto;
-  }
-  
-  .back-button {
-    background-color: #8B0000;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .back-button svg {
-    margin-right: 10px;
-  }
-  
-  main {
-    padding: 40px;
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .usuarios-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-  }
-  
-  .usuario-card {
-    background-color: #F0F0F0;
-    padding: 20px;
-    border-radius: 10px;
-    width: 250px;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .usuario-info {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .usuario-avatar {
-    width: 80px;
-    height: 80px;
-    background-color: #C4C4C4;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .usuario-info h2 {
-    color: #800000;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .usuario-info p {
-    margin: 5px 0;
-  }
-  
-  .usuario-actions {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  
-  .action-icon {
-    cursor: pointer;
-    font-size: 20px;
-  }
-  
-  .add-user-button {
-    background-color: #8B0000;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-  }
-  
-  .add-user-button svg {
-    margin-right: 10px;
-  }
-  
-  .footer-decoration {
-    width: 23%; /* Ajustar el tamaño del pie */
-    height: auto;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-  }
-  
+  text-align: center;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Cambiar a space-between para alinear elementos en extremos */
+  padding: 20px;
+  background-color: white;
+}
+
+.logo {
+  width: 350px; /* Ajustar el tamaño del logo */
+  height: auto;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5em; /* Ajustar el tamaño del título */
+  margin-bottom: 20px; /* Espacio debajo del título */
+  margin-top: -20px; /* Mover el título más arriba */
+}
+
+.usuarios-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.usuario-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.usuario-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.usuario-avatar {
+  width: 110px; /* Aumentar el tamaño del círculo */
+  height: 110px; /* Aumentar el tamaño del círculo */
+  border-radius: 50%;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.usuario-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.usuario-info h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.usuario-info p {
+  margin: 5px 0;
+  font-size: 1em;
+}
+
+.usuario-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.action-icon {
+  cursor: pointer;
+  font-size: 1.2em;
+  color: #8A0046;
+}
+
+.action-icon:hover {
+  color: #600030;
+}
+
+.back-button,
+.add-user-button {
+  background: none; /* Sin fondo */
+  font-weight: 700; /* Letras más gruesas */
+  color: #8A0046; /* Color vino */
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espacio entre el texto y el ícono */
+}
+
+.back-button:hover,
+.add-user-button:hover {
+  color: #600030;
+}
+
+.icon-back,
+.icon-add {
+  font-size: 1.2em; /* Tamaño del icono */
+}
+
+.footer-decoration {
+  width: 23%; /* Ajustar el tamaño del pie */
+  height: auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
