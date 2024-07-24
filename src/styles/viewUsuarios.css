@@ -1,0 +1,122 @@
+.UsuariosApp {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .logo {
+    width: 350px; /* Ajustar el tamaño del logo */
+    height: auto;
+  }
+  
+  .back-button {
+    background-color: #8B0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .back-button svg {
+    margin-right: 10px;
+  }
+  
+  main {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .usuarios-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .usuario-card {
+    background-color: #F0F0F0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .usuario-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .usuario-avatar {
+    width: 80px;
+    height: 80px;
+    background-color: #C4C4C4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .usuario-info h2 {
+    color: #800000;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .usuario-info p {
+    margin: 5px 0;
+  }
+  
+  .usuario-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .action-icon {
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .add-user-button {
+    background-color: #8B0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .add-user-button svg {
+    margin-right: 10px;
+  }
+  
+  .footer-decoration {
+    width: 23%; /* Ajustar el tamaño del pie */
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  
