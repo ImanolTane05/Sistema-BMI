@@ -1,17 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Importa BrowserRouter, Route y Routes
 import './index.css';
 import App from './App';
+import Login from './components/index'; // Asegúrate de que la ruta a Index.js sea correcta
 import reportWebVitals from './reportWebVitals';
+import IndexAdmin from './components/indexAdmin';
 
+// Crea el root y renderiza la aplicación envuelta en el Router
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/login" element={<Login />} /> {/* Ruta para el login */}
+        <Route path="/admin" element={<IndexAdmin />} />
+      </Routes>
+    </Router>
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

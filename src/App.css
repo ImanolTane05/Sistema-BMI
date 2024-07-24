@@ -1,38 +1,130 @@
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  font-family: Arial, sans-serif;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+header {
+  display: flex;
   align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  background-color: white;
+}
+
+.logo {
+  width: 350px; /* Ajustar el tamaño del logo */
+  height: auto;
+}
+
+main {
+  flex: 1;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 80%; /* Ajustar el ancho para distribuir mejor */
+  max-width: 1200px;
+}
+
+.left-side {
+  flex: 2; /* Ajustar la parte izquierda */
+  text-align: left;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.left-side h1 {
+  font-size: 3em; /* Cambiar el tamaño del texto del título */
+  font-weight: 690;
+  margin-bottom: 20px; /* Espacio entre el título y el párrafo */
+}
+
+.left-side p {
+  font-weight: 690;
+  color: #7d7b7b;
+  font-size: 1.2em; /* Cambiar el tamaño del texto del párrafo */
+}
+
+.right-side {
+  flex: 3; /* Hacer más grande el cuadro blanco */
+  background-color: white;
+  padding: 60px; /* Más espacio interno */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 490px; /* Ancho máximo para el cuadro blanco */
+  min-height: 400px; /* Altura mínima para el cuadro blanco */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -100px; /* Subir el cuadro blanco, ajusta el valor según sea necesario */
+}
+
+.login-button {
+  background-color: #8A0046;
+  font-weight: 620;
   color: white;
+  border: none;
+  padding: 20px 40px; /* Hacer más grande el botón */
+  cursor: pointer;
+  font-size: 1.5em; /* Hacer más grande el texto del botón */
+  margin: auto; /* Centrar el botón horizontalmente */
+  display: flex; /* Para alinear el texto y el icono */
+  align-items: center; /* Alinea verticalmente */
+  gap: 2px; /* Espacio entre el texto y el icono */
+  text-align: center; /* Centrar el texto dentro del botón */
+  width: 300px; /* Ajustar el ancho del botón según sea necesario */
+  border-radius: 5px;
+}
+.login-button .text {
+  margin-right: 10px; /* Ajustar el espacio entre el texto y el icono si es necesario */
+  margin-left: 0; /* Ajustar el margen izquierdo del texto */
+}
+.login-button i {
+  margin-left: 10px; /* Espacio entre el texto y el icono */
 }
 
-.App-link {
-  color: #61dafb;
+.login-button:hover {
+  background-color: #600030;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.policies {
+  display: flex; /* Para alinear el texto y el icono */
+  align-items: center; /* Alinea verticalmente */
+  color: #8A0046;
+  text-decoration: none;
+  font-size: 1.2em; /* Ajustar el tamaño del texto de las políticas */
+  gap: 10px; /* Espacio entre el texto y el icono */
+  margin: 20px auto; /* Centrar el enlace y añadir espacio */
+  text-align: center; /* Centrar el texto dentro del enlace */
 }
+
+.policies:hover {
+  text-decoration: underline;
+}
+
+.footer-decoration {
+  width: 23%; /* Ajustar el tamaño del pie */
+  height: auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+ 
